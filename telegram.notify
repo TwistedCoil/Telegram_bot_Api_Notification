@@ -1,0 +1,33 @@
+#! /bin/bash
+TOKEN=$1
+ID=$2
+
+# Estos chequeos, si bien no son necesarios pueden servir de ayuda y guia de su funcionamiento
+# This checks, maybe are not necessary but can help as guide 
+
+if [ "$1" == "-h" ]; then
+  echo "Usage: `basename $0` TOKEN ID \"Mensaje a enviar\""
+  echo "Usage: `basename $0` TOKEN ID \"Message Text\""
+  exit 0
+fi
+if [ -z "$1" ]
+  then
+    echo "Ingrese el Token de Bot"
+	echo "Insert Token Bot"
+    exit 0
+fi
+if [ -z "$2" ]
+  then
+    echo "Ingrese el ID del usuario o grupo  a enviar el Mensaje"
+    echo "Insert the user/group ID to send the message"
+    exit 0
+fi
+
+if [ -z "$3" ]
+  then
+    echo "Ingrese el mensaje a enviar, recuerde poner entre comillas el mensaje"
+    echo "Insert the message to send, remember put in quotees your message"
+    exit 0
+fi
+
+curl -s --data "text=$3" --data "chat_id=$ID" 'https://api.telegram.org/bot'$TOKEN'/sendMessage' > /dev/null
