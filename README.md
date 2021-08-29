@@ -43,7 +43,7 @@ Si queremos añadir el Bot en un Grupo o Canal, para que envíe mensajes o haga 
 
 Para ello abre un navegador y escrfibe lo siguiente:
 
-https://api.telegram.org/bot[TOKEN DEL BOT]/GetUpdates   <-- sin los corechete y todo junto
+https://api.telegram.org/bot[TOKEN DEL BOT]/GetUpdates   <-- sin los corchetes y todo junto
 
 Envia un mensaje al bot desde telegram y podras ver tu ID en el GetUpdate del navegador en un formato parecido a este:
 
