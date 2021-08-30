@@ -69,7 +69,3 @@ Envia un mensaje al bot desde telegram y podras ver tu ID en el GetUpdate del na
     sudo chmod +x telegram.notify
     
     y ya lo puedes ejecutar con ./telegram.notify
-    
-    Si lo quieres dejar como binario de sistema solo copialo al /usr/bin
-    
-    cp telegram.notify /usr/bin y podrás llamarlo de cualquier parte del sistema
