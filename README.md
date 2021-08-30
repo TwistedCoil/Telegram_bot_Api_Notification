@@ -61,3 +61,15 @@ Envia un mensaje al bot desde telegram y podras ver tu ID en el GetUpdate del na
     
     Recuerda tu TOKEN y Recuerda tu ID
     
+    
+    En tu maquina clona el repositorio o copia el script como te acomode
+    
+    dale permisos de ejecucion al script con:
+    
+    sudo chmod +x telegram.notify
+    
+    y ya lo puedes ejecutar con ./telegram.notify
+    
+    Si lo quieres dejar como binario de sistema solo copialo al /usr/bin
+    
+    cp telegram.notify /usr/bin y podrás llamarlo de cualquier parte del sistema
